@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "ObjectId(\"5c985b1ad062fc3182f433ea\")",
+        "created_at": 1553488666421,
+        "updated_at": 1553488666421,
+        "name": "Residential",
+        "combines": "Residential,Commercial",
+        "totalable": false,
+        "render": false,
+        "customer": "ObjectId(\"5bd4d4d1104fe2139765b165\")"
+    },
+    {
+        "_id": "ObjectId(\"5e87c7e455807b29856174c9\")",
+        "created_at": 1585956836020,
+        "updated_at": 1585956836020,
+        "name": "Imperial",
+        "combines": "Residential,Commercial",
+        "totalable": false,
+        "render": true,
+        "customer": "ObjectId(\"5e46d6ff55807b2985617327\")"
+    },
+    {
+        "_id": "ObjectId(\"5dbb296113244546a0624174\")",
+        "created_at": 1572546913336,
+        "updated_at": 1602611990297,
+        "name": "Community",
+        "combines": "Residential,Commercial",
+        "totalable": true,
+        "render": true,
+        "customer": "ObjectId(\"5dbb26b0c657605df515d5e6\")"
+    }
+]
