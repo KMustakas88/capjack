@@ -6,7 +6,7 @@ class Segments(models.Model):
     created_at = models.BigIntegerField()
     updated_at = models.BigIntegerField()
     name = models.CharField(max_length=100)
-    combines = models.CharField(max_length=100)
+    combines = models.CharField(max_length=100, blank=True)
     totalable = models.BooleanField()
     render = models.BooleanField()
     customer = models.CharField(max_length=100)
