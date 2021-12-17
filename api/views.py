@@ -11,11 +11,11 @@ from .serlializers import SegmentSerializer
 @api_view(['GET'])
 def apiOverview(request):
 	api_urls = {
-		'List':'/segment-list/',
-		'Detail View':'/segment-detail/<str:pk>/',
-		'Create':'/segment-create/',
-		'Update':'/segment-update/<str:pk>/',
-		'Delete':'/segment-delete/<str:pk>/',
+		'List':'/segments-list/',
+		'Detail View':'/segments-detail/<str:pk>/',
+		'Create':'/segments-create/',
+		'Update':'/segments-update/<str:pk>/',
+		'Delete':'/segments-delete/<str:pk>/',
 		}
 
 	return Response(api_urls)

@@ -21,5 +21,6 @@ Then, conda envs can be activated with `conda activate <env name>`
 ### restore pg database
 1. ensure postgres is already installed and running on your machine
   - visit https://postgresapp.com/documentation/ for how to easy install on MacOS
+2. instsall postgresql if now already isntalled with `brew install postgresql`
 2. from the pqsl prompt run `psql>create database capdash_django`
 3. run bash prompt `psql dbname < ./env/pg/capdash_django.dump`
