@@ -27,37 +27,36 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				{this.state.segments.map((segment) => (
-					// <div key={id}>
-					<div class="container">
-						<table class="table">
+				<div class="container">
+					<table class="table">
 
-							<thead>
-								<tr>
-									<th>Name</th>
-									<th>Date Created</th>
-									<th>Last Updated</th>
-									<th>Combines</th>
-									<th>Totalable</th>
-									<th>Render</th>
-									<th>Customer</th>
-								</tr>
-							</thead>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Date Created</th>
+								<th>Last Updated</th>
+								<th>Combines</th>
+								<th>Totalable</th>
+								<th>Render</th>
+								<th>Customer</th>
+							</tr>
+						</thead>
+						{this.state.segments.map((segment) => (
 							<tbody>
 								<tr>
-									<td>{ segment.name }</td>
-									<td>{ segment.created_at }</td>
-									<td>{ segment.updated_at }</td>
-									<td>{ segment.combines }</td>
-									<td>{ segment.totalable }</td>
-									<td>{ segment.render }</td>
-									<td>{ segment.customer }</td>
+									<td>{segment.name}</td>
+									<td>{segment.created_at}</td>
+									<td>{segment.updated_at}</td>
+									<td>{segment.combines}</td>
+									<td>{segment.totalable}</td>
+									<td>{segment.render}</td>
+									<td>{segment.customer}</td>
 								</tr>
 							</tbody>
-						</table>
-					</div>
-				)
-				)}
+						)
+						)}
+					</table>
+				</div>
 			</div>
 		);
 	}
