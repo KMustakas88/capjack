@@ -17,9 +17,11 @@ class App extends React.Component {
 		axios.get('http://localhost:8000/api/segments-list')
 			.then(res => {
 				data = res.data;
+				console.log("Data", data)
 				this.setState({
 					segments: data
 				});
+				console.log("state.segments", this.state.segments);
 			})
 			.catch(err => { })
 	}
@@ -48,8 +50,8 @@ class App extends React.Component {
 									<td>{segment.created_at}</td>
 									<td>{segment.updated_at}</td>
 									<td>{segment.combines}</td>
-									<td>{segment.totalable}</td>
-									<td>{segment.render}</td>
+									<td>{segment.totalable.toString()}</td>
+									<td>{segment.render.toString()}</td>
 									<td>{segment.customer}</td>
 								</tr>
 							</tbody>
@@ -61,5 +63,4 @@ class App extends React.Component {
 		);
 	}
 }
-
 export default App;
