@@ -1,5 +1,7 @@
 from django.db import models
 
+from customers.models import Customers
+
 class Segments(models.Model):
 
     _id = models.CharField(max_length=100, primary_key=True)
@@ -9,7 +11,8 @@ class Segments(models.Model):
     combines = models.CharField(max_length=100, blank=True)
     totalable = models.BooleanField()
     render = models.BooleanField()
-    customer = models.CharField(max_length=100)
+    customer = models.ForeignKey(Customers,on_delete=models.CASCADE)
+    # customer = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
