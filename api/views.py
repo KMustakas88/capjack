@@ -53,3 +53,11 @@ def apiSegmentUpdate(request, pk):
         serializer.save()
 
     return Response(serializer.data)
+
+
+@api_view(['GET'])
+def hello(request):
+    segments = Segments.objects.all()
+    serializer = SegmentSerializer(segments, many=True)
+
+    return render(request, 'list_segments.html', {'d': serializer.data})
